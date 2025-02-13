@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "EF_cucumbersalad";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_cucumbersalad.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(../img/201746236_1280.jpg);
+  background-size: contain;
+
+  overflow-x: hidden;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px 15px 20px;
+  font-family: "EF_cucumbersalad";
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.header_main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo > img {
+  width: 150px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* ----------------------------------------- */
+.head_Link_List_Box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.link_list {
+  display: flex;
+  gap: 10px;
+
+  color: white;
+  font-size: 11px;
+  font-weight: 900;
+}
+.community_hidden_button {
+  color: palevioletred;
+  padding-right: 10px;
+  position: relative;
+}
+
+.hoverArrow {
+  font-size: 25px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -8px;
+  right: -5px;
+}
+.community_hidden {
+  display: flex;
+  padding: 6px 0;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  font-weight: 900;
+  font-size: 9px;
+  display: none;
+}
+
+.hover_pink:hover {
+  color: palevioletred;
+}
+/* ----------------------------------------- */
+
+.sighBox {
+  width: 200px;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid white;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.globeBox {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  background-color: white;
+}
+
+.globeBox > i {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.sighText {
+  color: white;
+  font-size: 11px;
+}
