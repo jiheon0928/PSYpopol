@@ -1,0 +1,62 @@
+.sliderNFT {
+  height: 90vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  padding: 8% 2%;
+  gap: 100px;
+}
+
+.sliderNFT_title {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  font-family: "EF_cucumbersalad";
+}
+
+.slide_Flex {
+  display: flex;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #f877d1;
+  border-radius: 20px;
+}
+
+.slide_list {
+  display: flex;
+  padding: 15px;
+  gap: 10%;
+}
+.slideImg {
+  width: 200px;
+}
+
+.slide_list_text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: left;
+  gap: 20px;
+}
+.after_concert {
+  font-size: 11px;
+  font-weight: 700;
+  color: #f877d1;
+}
+.slide_title {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+}
+.slide_explanation {
+  font-size: 13px;
+  white-space: nowrap;
+  line-height: 20px;
+}

@@ -1,37 +1,91 @@
-.sopsyety {
+.infoSection {
+  position: relative;
+  height: 200vh;
+}
+.blur {
   width: 100%;
   height: 100vh;
-
-  background-size: contain;
-  position: relative;
-  border: 3px solid red;
-}
-.tiggerImg {
-  border: 10px solid blue;
-  width: 100%;
-  height: 100%;
-}
-
-.sopsyety_title > img {
-  z-index: -1;
-  width: 100%;
   position: absolute;
-  top: 60px;
+  top: 0;
+  z-index: 6;
+  background-color: rgb(0, 0, 0);
+}
+
+.sopsyety_title {
+  width: 100%;
+  height: 50vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.sopsyety_title > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sopsyety_text {
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 27px;
+  position: absolute;
+  top: 50vh;
+  z-index: 5;
+  padding: 5%;
+  line-height: 40px;
 }
 
 .tigger {
-  width: 100%;
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+  top: 0;
 }
 
-.tigger_Hero {
-  color: white;
-  font-size: 25px;
-  font-weight: 900;
-  line-height: 35px;
-  letter-spacing: -2px;
+.tigger > img {
+  height: 100%;
+  margin-left: 200px;
+}
 
+.sopsyety_Parallax {
+  width: 100%;
+  height: 100vh;
   position: absolute;
-  left: 2%;
-  top: 37%;
-  z-index: 3;
+  bottom: 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.sopsyety_Parallax_main {
+  width: 70%;
+}
+.tigger_Parallax_Hero {
+  display: flex;
+}
+.sopsyety_svg > img {
+  width: 500px;
+}
+.nft_introduce {
+  color: #f877d1;
+}
+
+.tigger_Parallax_Hero > figure > img {
+  width: 400px;
+}
+.nft_target {
+  color: white;
+}
+
+.tigger_Parallax {
+  width: 100%;
+  height: 100vh;
 }

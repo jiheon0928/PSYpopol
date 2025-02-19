@@ -1,0 +1,47 @@
+.tigger_Parallax {
+}
+
+.tigger_Parallax > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.panationStyle {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: -150px;
+}
+
+.panationStyle > img {
+  width: 300px;
+}
+
+.panation_1 {
+  z-index: 9999;
+}
+.panation_2 {
+  z-index: 8888;
+}
+.panation_3 {
+  z-index: 7777;
+}
+.panation_4 {
+  z-index: 6666;
+}
+.panation_5 {
+  z-index: 5555;
+}
+.panation_6 {
+  z-index: 4444;
+}
+.panation_7 {
+  z-index: 3333;
+}
+.panation_8 {
+  z-index: 2222;
+}
+.panation_9 {
+  z-index: 1111;
+}

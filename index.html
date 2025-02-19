@@ -15,12 +15,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/head.css" />
     <link rel="stylesheet" href="css/sopsyety.css" />
-    <link rel="stylesheet" href="css/tigger_Parallax.css" />
+    <link rel="stylesheet" href="css/birthday.css" />
+    <link rel="stylesheet" href="css/slide.css" />
+    <link rel="stylesheet" href="css/parallax.css" />
     <script src="js/header.js" defer></script>
     <script src="js/sopsyety.js" defer></script>
+    <script src="js/birthday.js" defer></script>
+    <script src="js/slide.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -51,24 +56,39 @@
         </div>
       </div>
     </header>
-    <section class="sopsyety">
-      <article class="tiggerImg">
+
+    <!-- ---------------------------------------------------------------------- -->
+
+    <section class="infoSection">
+      <div class="blur"></div>
+
+      <!-- --------------------------------------------------- -->
+
+      <section class="tigger">
         <img
-          class="tigger"
           src="img/KakaoTalk_20250212_171524015-removebg-preview.png"
           alt=""
         />
-      </article>
-      <div class="sopsyety_title">
-        <img src="img/스크린샷_2025-02-12_172339-removebg-preview.png" alt="" />
-      </div>
+      </section>
 
-      <div class="tigger_Hero">
+      <!-- --------------------------------------------------- -->
+
+      <section class="sopsyety_title">
+        <img
+          class="full"
+          src="img/스크린샷_2025-02-12_172339-removebg-preview.png"
+          alt=""
+        />
+      </section>
+      <div class="sopsyety_text">
         새로운 즐거움과 경험으로 채워질 커뮤니티<br />여러분과 함께 만들어갈
         soPsyety의 긴 여정이<br />시작되었습니다.
       </div>
-      <section class="tigger_Parallax">
-        <div class="tigger_Parallax_main">
+
+      <!-- ------------------------------------------------------------------------>
+
+      <section class="sopsyety_Parallax">
+        <div class="sopsyety_Parallax_main">
           <div class="sopsyety_svg">
             <img
               src="https://sopsyety.io/svg/logo-about.svg?t=20221116182200"
@@ -76,7 +96,9 @@
             />
           </div>
           <div class="tigger_Parallax_Hero">
-            <figure><img src="img/다운로드.png" alt="" /></figure>
+            <figure>
+              <img src="img/다운로드.png" alt="" />
+            </figure>
             <div class="tigger_Parallax_Hero_text">
               <h4 class="nft_introduce">
                 “soPSYety는 고객을 모시는 업주의 마음으로 공연과<br />음악을
@@ -93,6 +115,188 @@
           </div>
         </div>
       </section>
+    </section>
+
+    <!-- --------------------------------------------------- -->
+    <section class="marquee_page">
+      <div class="marquee">
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------- -->
+
+    <section class="birthday">
+      <ul class="birthday_text">
+        <li class="birthdayDrop">1st NFT DROP</li>
+        <li class="birthday_nft">
+          soPsyety에서 발매하는 첫번째 NFT의 주인공은 PSYger<br />
+          입니다.PsyetyNFT는 SPY의 콘서트를 진정으로 즐길 줄<br />아는 당신을
+          위해 탄생했습니다.
+        </li>
+        <li><img class="birthdayPsy" src="img/champion-num.png" alt="" /></li>
+      </ul>
+      <figure>
+        <img class="winkTigger" src="img/winkTigger.png" alt="" />
+      </figure>
+    </section>
+
+    <!-- --------------------------------------------------- -->
+
+    <section class="marquee_page">
+      <div class="marquee">
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+        <div class="psyMarquee_list">
+          <img src="img/psyMarguee.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sliderNFT">
+      <div class="sliderNFT_title">FEATURES & UTILITIES</div>
+      <div class="swiper mySwiper slide_Flex">
+        <div class="swiper-wrapper slide_Flex">
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <figure>
+                <img class="slideImg" src="img/Screenshot_1.png" alt="" />
+              </figure>
+              <ul class="slide_list_text">
+                <il class="after_concert">앞으로 진행될 PSY 콘서트에 대해</il>
+                <il class="slide_title">사전애매권<br />2매 지급</il>
+                <il class="slide_explanation"
+                  ><싸이 흠뻑쇼> 콘서트 티켓 2매 및<br /><싸이 올나잇스탠드>
+                  콘서트 티켓 2매를<br />
+                  사전에 구매할 수 있는 권리를 가집니다.</il
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <figure>
+                <img class="slideImg" src="img/Screenshot_1.png" alt="" />
+              </figure>
+              <ul class="slide_list_text">
+                <il class="after_concert"></il>
+                <il class="slide_title">사전애매권<br />2매 지급</il>
+                <il class="slide_explanation"
+                  ><싸이 흠뻑쇼> 콘서트 티켓 2매 및<br /><싸이 올나잇스탠드>
+                  콘서트 티켓 2매를<br />
+                  사전에 구매할 수 있는 권리를 가집니다.</il
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <figure>
+                <img class="slideImg" src="img/Screenshot_1.png" alt="" />
+              </figure>
+              <ul class="slide_list_text">
+                <il class="after_concert"></il>
+                <il class="slide_title">사전애매권<br />2매 지급</il>
+                <il class="slide_explanation"
+                  ><싸이 흠뻑쇼> 콘서트 티켓 2매 및<br /><싸이 올나잇스탠드>
+                  콘서트 티켓 2매를<br />
+                  사전에 구매할 수 있는 권리를 가집니다.</il
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <figure>
+                <img class="slideImg" src="img/Screenshot_1.png" alt="" />
+              </figure>
+              <ul class="slide_list_text">
+                <il class="after_concert"></il>
+                <il class="slide_title">사전애매권<br />2매 지급</il>
+                <il class="slide_explanation"
+                  ><싸이 흠뻑쇼> 콘서트 티켓 2매 및<br /><싸이 올나잇스탠드>
+                  콘서트 티켓 2매를<br />
+                  사전에 구매할 수 있는 권리를 가집니다.</il
+                >
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <figure>
+                <img class="slideImg" src="img/Screenshot_1.png" alt="" />
+              </figure>
+              <ul class="slide_list_text">
+                <il class="after_concert"></il>
+                <il class="slide_title">사전애매권<br />2매 지급</il>
+                <il class="slide_explanation"
+                  ><싸이 흠뻑쇼> 콘서트 티켓 2매 및<br /><싸이 올나잇스탠드>
+                  콘서트 티켓 2매를<br />
+                  사전에 구매할 수 있는 권리를 가집니다.</il
+                >
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------- -->
+
+    <section class="tigger_Parallax">
+      <ul>
+        <li class="panation_1 panationStyle">
+          <img src="img/pnation05.png" alt="" />
+        </li>
+        <li class="panation_2 panationStyle">
+          <img src="img/pnation06.png" alt="" />
+        </li>
+        <li class="panation_3 panationStyle">
+          <img src="img/pnation01.png" alt="" />
+        </li>
+        <li class="panation_4 panationStyle">
+          <img src="img/pnation07.png" alt="" />
+        </li>
+        <li class="panation_5 panationStyle">
+          <img src="img/pnation02.png" alt="" />
+        </li>
+        <li class="panation_6 panationStyle">
+          <img src="img/pnation08.png" alt="" />
+        </li>
+        <li class="panation_7 panationStyle">
+          <img src="img/pnation03.png" alt="" />
+        </li>
+        <li class="panation_8 panationStyle">
+          <img src="img/pnation09.png" alt="" />
+        </li>
+        <li class="panation_9 panationStyle">
+          <img src="img/pnation04.png" alt="" />
+        </li>
+      </ul>
     </section>
   </body>
 </html>
