@@ -1,4 +1,7 @@
 .tigger_Parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tigger_Parallax > ul {
@@ -9,7 +12,7 @@
 }
 .panationStyle {
   position: absolute;
-  top: 50%;
+
   right: 50%;
   margin-right: -150px;
 }
